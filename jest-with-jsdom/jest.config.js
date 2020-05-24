@@ -1,7 +1,9 @@
 module.exports = {
-  preset: 'ts-jest/presets/js-with-ts',
-  testEnvironment: 'node',
-  transformIgnorePatterns: [
-    '/node_modules/(?!(lit-element))'
-  ]
+  preset: 'ts-jest',
+  testEnvironment: 'jest-environment-jsdom-sixteen',
+  modulePaths: ['./', './dist'],
+  moduleFileExtensions: ['js', 'json', 'jsx', 'ts', 'tsx', 'node']
+  // transformIgnorePatterns: [
+  //   '/node_modules/(?!(lit-element))'
+  // ]
 };

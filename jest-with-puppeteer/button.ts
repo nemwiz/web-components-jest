@@ -7,11 +7,6 @@ export class Button extends LitElement {
     buttonText = '';
 
     render() {
-        console.log('hello from button');
         return html`<button id="custom-button">${this.buttonText}</button>`;
-    }
-
-    createRenderRoot() {
-        return this;
     }
 }
