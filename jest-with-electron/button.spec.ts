@@ -1,7 +1,7 @@
 import {createAndAppendElement, getShadowRoot} from './test-util';
 import {LitElement} from 'lit-element';
 
-describe('custom-button', () => {
+describe('awesome-button', () => {
 
     const AWESOME_BUTTON_TAG = 'awesome-button';
     const ELEMENT_ID = 'custom-button';

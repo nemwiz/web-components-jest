@@ -1,6 +1,6 @@
 import {html, customElement, LitElement, property} from "lit-element";
 
-@customElement('custom-button')
+@customElement('awesome-button')
 export class Button extends LitElement {
 
     @property()
