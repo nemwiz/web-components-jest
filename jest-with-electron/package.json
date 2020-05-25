@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "test": "jest --verbose=false",
-    "test:debug": "SET DEBUG_MODE=1&&jest --verbose=false"
+    "test": "npm run build && jest --verbose=false",
+    "test:debug": "npm run build && SET DEBUG_MODE=1&&jest --verbose=false"
   },
   "author": "",
   "license": "ISC",
