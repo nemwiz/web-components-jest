@@ -1,18 +1,19 @@
-import {LitElement} from 'lit-element';
+import {createAndAppendElement, getShadowRoot} from './test-util';
 
 describe('custom-button', () => {
-    it('runs the test', async () => {
-        const dummyText = 'Web components & Jest';
 
-        const buttonElement = window.document.createElement("custom-button") as LitElement;
+    const CUSTOM_BUTTON_TAG = 'custom-button';
+
+    it('displays button text', async () => {
+
+        const buttonElement = createAndAppendElement(CUSTOM_BUTTON_TAG);
+        const dummyText = 'Web components & Jest with Electron';
         buttonElement.setAttribute('buttonText', dummyText);
-        window.document.body.appendChild(buttonElement);
 
         await buttonElement.updateComplete;
 
-        const renderedText = document.body.getElementsByTagName('custom-button')[0].shadowRoot.getElementById('custom-button').innerText;
+        const renderedText = getShadowRoot(CUSTOM_BUTTON_TAG).getElementById('custom-button').innerText;
 
-        expect(true).toBeTruthy();
         expect(renderedText).toEqual(dummyText);
     })
 });
