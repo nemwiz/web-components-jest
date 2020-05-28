@@ -14,7 +14,6 @@
     "lit-element": "^2.3.1"
   },
   "devDependencies": {
-    "@jest-runner/electron": "^3.0.0",
     "@types/jest": "^25.2.1",
     "clean-webpack-plugin": "^3.0.0",
     "electron": "^9.0.0",
