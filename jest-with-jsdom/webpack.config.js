@@ -3,9 +3,12 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
 module.exports = {
     mode: 'development',
-    entry: './index.ts',
+    entry: {
+        'lit-html':'./node_modules/lit-html/lit-html.js',
+        'lit-element':'./node_modules/lit-element/lit-element.js',
+    },
     module: {
-        rules: [
+        rules: [    
             {
                 test: /\.ts?$/,
                 use: 'ts-loader',
@@ -20,7 +23,8 @@ module.exports = {
         new CleanWebpackPlugin()
     ],
     output: {
-        filename: 'main.js',
+        filename: '[name].js',
+        libraryTarget:'commonjs',
         path: path.resolve(__dirname, 'dist'),
     },
 };

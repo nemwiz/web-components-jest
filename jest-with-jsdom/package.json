@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "test": "npm run build && jest --verbose=false"
+    "test": "npm run build && jest --verbose=false",
+    "test:watch": "npm run build && jest --watch"
   },
   "repository": {
     "type": "git",
