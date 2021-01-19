@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack",
     "test": "npm run build && jest --verbose=false",
-    "test:debug": "npm run build && SET DEBUG_MODE=1&&jest --verbose=false"
+    "test:debug": "npm run build && DEBUG_MODE=1 jest --verbose=false"
   },
   "author": "",
   "license": "ISC",
