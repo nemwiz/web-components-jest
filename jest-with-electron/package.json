@@ -16,7 +16,7 @@
   "devDependencies": {
     "@types/jest": "^25.2.1",
     "clean-webpack-plugin": "^3.0.0",
-    "electron": "^9.0.0",
+    "electron": "^9.4.0",
     "jest": "^25.2.7",
     "jest-electron": "^0.1.11",
     "ts-jest": "^25.3.1",
